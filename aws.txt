@@ -1,3 +1,8 @@
+white paper:
+https://docs.aws.amazon.com/aws-technical-content/latest/microservices-on-aws/microservices-on-aws.pdf?icmpid=link_from_whitepapers_page
+
+
+video:
 https://aws.amazon.com/getting-started/tutorials/?sc_channel=PS&sc_campaign=acquisition_IN&sc_publisher=google&sc_medium=api_gateway_nb_rlsa&sc_content=api_gateway_p&sc_detail=api%20gateway&sc_category=api_gateway&sc_segment=195923559751&sc_matchtype=p&sc_country=IN&s_kwcid=AL!4422!3!195923559751!p!!g!!api%20gateway&ef_id=Vo54rwAABfL1wxLV:20180627122809:s
 
 
