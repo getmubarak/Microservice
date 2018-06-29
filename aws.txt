@@ -1,0 +1,23 @@
+https://aws.amazon.com/getting-started/tutorials/?sc_channel=PS&sc_campaign=acquisition_IN&sc_publisher=google&sc_medium=api_gateway_nb_rlsa&sc_content=api_gateway_p&sc_detail=api%20gateway&sc_category=api_gateway&sc_segment=195923559751&sc_matchtype=p&sc_country=IN&s_kwcid=AL!4422!3!195923559751!p!!g!!api%20gateway&ef_id=Vo54rwAABfL1wxLV:20180627122809:s
+
+
+
+ECS:
+
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_GetStarted.html
+
+https://aws.amazon.com/getting-started/tutorials/deploy-docker-containers/
+
+https://console.aws.amazon.com/ecs/home#/firstRun.
+
+https://aws.amazon.com/blogs/opensource/microservices-on-aws-using-containers-serverless/
+
+ECS vs Kubernetes
+https://dzone.com/articles/kubernetes-vs-amazon-ecs
+
+api gateway:
+https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-step-by-step.html
+
+elb
+https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-getting-started.html
+
