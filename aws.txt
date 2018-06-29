@@ -21,3 +21,29 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-
 elb
 https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-getting-started.html
 
+On the Assign Security Groups page, select Create a new security group.This new security group contains a rule that allows traffic to the port that you configured your load balancer to use.
+
+
+"message" : "Internal server error"
+
+Changing from
+exports.handler = (event, context, callback) => {
+    callback(null, 'Hello from Lambda');
+};
+to
+exports.handler = (event, context, callback) => {
+    callback(null, { statusCode: 200, body: 'Hello from Lambda' });
+};
+
+* Visit the Lambda section of the AWS Console and click Create a Lambda function.
+* Choose Blank Function 
+* Choose API Gateway on the “Configure triggers”
+* Leave the Deployment stage as “prod”.
+* Set Security to “Open”. This will enable your API to be invoked via HTTP without security credentials.
+* Choose 128 for “Memory (MB)” in the “Advanced settings” section, and 30 sec for “Timeout”. API Gateway imposes a 30 second timeout which is the reason for choosing that.
+* You should see a “Congratulations!” confirmation message. On that page you should see the full URL to your new API endpoint.  Example: https://abcdefghij.execute-api.us-west-2.amazonaws.com/prod/eratosthenes  where "abcdefghij" is a token unique to your API
+* Click the Actions and choose Configure test event.
+* Under Input test event enter the following code:  { "queryStringParameters": { "max": 1000000, "loops": 1 } }  The parameter “max” is the limit for how high the function will search for prime numbers. The “loops” parameter controls how many times the function will repeat the prime number calculation (to consume more CPU without consuming more memory).
+* Click Save and test. This will test the function directly, without invoking the API Gateway.
+
+
