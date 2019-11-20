@@ -4,9 +4,21 @@ with the service, and users can request a drone to pick up goods for delivery. W
 a backend system assigns a drone and notifies the user with an estimated delivery time. While the delivery is in progress,
 the customer can track the location of the drone, with a continuously updated ETA.
 
-This scenario involves a fairly complicated domain. Some of the business concerns include scheduling drones, tracking packages,
-managing user accounts, and storing and analyzing historical data. Moreover, Fabrikam wants to get to market quickly and 
-then iterate quickly, adding new functionality and capabilities. The application needs to operate at cloud scale, with a 
+This scenario involves a fairly complicated domain. Some of the business concerns include scheduling drones, tracking packages,managing user accounts, and storing and analyzing historical data. Moreover, Fabrikam wants to get to market quickly and then iterate quickly, adding new functionality and capabilities. The application needs to operate at cloud scale, with a 
 high service level objective (SLO). Fabrikam also expects that different parts of the system will have very different 
 requirements for data storage and querying. All of these considerations lead Fabrikam to choose a microservices architecture
 for the Drone Delivery application.
+
+1. Shipping is core to the business. Everything else in the diagram exists to enable this functionality.
+
+2. Drone management is also core to the business. Functionality that is closely related to drone management includes drone repair and using predictive analysis to predict when drones need servicing and maintenance.
+
+3. ETA analysis provides time estimates for pickup and delivery.
+
+4. Third-party transportation will enable the application to schedule alternative transportation methods if a package cannot be shipped entirely by drone.
+
+5. Drone sharing is a possible extension of the core business. The company may have excess drone capacity during certain hours, and could rent out drones that would otherwise be idle. This feature will not be in the initial release.
+
+6. Video surveillance is another area that the company might expand into later.
+
+7. User accounts, Invoicing, and Call center are subdomains that support the core business.
