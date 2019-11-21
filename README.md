@@ -2,11 +2,11 @@
 
 uber Case Study <br>
 https://dzone.com/articles/microservice-architecture-learn-build-and-deploy-a<br>
-Failures
-https://techbeacon.com/app-dev-testing/monolith-microservices-horror-stories-best-practices
-Mini Service
-https://thenewstack.io/miniservices-a-realistic-alternative-to-microservices/
-Microservice to Monolthic 
-https://segment.com/blog/goodbye-microservices/
-Checklist
-https://dwmkerr.com/the-death-of-microservice-madness-in-2018/
+Failures<br>
+https://techbeacon.com/app-dev-testing/monolith-microservices-horror-stories-best-practices<br>
+Mini Service<br>
+https://thenewstack.io/miniservices-a-realistic-alternative-to-microservices/<br>
+Microservice to Monolthic <br>
+https://segment.com/blog/goodbye-microservices/<br>
+Checklist<br>
+https://dwmkerr.com/the-death-of-microservice-madness-in-2018/<br>
