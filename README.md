@@ -1,7 +1,7 @@
 # Microservice
 
-uber Case Study
-https://dzone.com/articles/microservice-architecture-learn-build-and-deploy-a
+uber Case Study <br>
+https://dzone.com/articles/microservice-architecture-learn-build-and-deploy-a<br>
 Failures
 https://techbeacon.com/app-dev-testing/monolith-microservices-horror-stories-best-practices
 Mini Service
