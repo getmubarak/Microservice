@@ -19,11 +19,10 @@ only 5 of whom are IT-focused, to manage their operations across five states in 
 
 The customer has to accept a set of constraints to place a successful order:
 
-The customer must have an active account in good standing (less than five floods; i.e., negative points).
+The customer must have an active account in good standing 
 The customer must have a valid payment method registered.
 An order is limited to 10 or less items with a cumulative weight not more than 25lb.
 RG does not guarantee any specific brands.
 There is a four-hour window from order confirmation to requested delivery.
 An order cannot include medicines or hazardous materials.
-The delivery address must be a physical address.
 The delivery address must be within 50 miles of a city center.
