@@ -1,4 +1,6 @@
 # Microservice
+patterns<br>
+https://docs.microsoft.com/en-us/azure/architecture/patterns/<br>
 Drone case study<br>
 https://docs.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis <br>
 uber Case Study <br>
