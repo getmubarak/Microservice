@@ -1,3 +1,8 @@
+sidecar pattern: 
+  Intend-> decorate object. seperate cross cutting concerns as a side car. 
+ambassador pattern : 
+  Intend-> remote proxy. lossely couple and abstract remote calls using a proxy. 
+
 The sidecar pattern consists of a main application—i.e. your web application—plus a helper container with a responsibility 
 that is essential to your application, but is not necessarily part of the application itself. eg. cross cutting concerns.
 
