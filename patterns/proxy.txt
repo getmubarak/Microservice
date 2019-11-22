@@ -1,0 +1,14 @@
+Proxy pretends being an object when in fact it's not. 
+
+There are several types of proxies:
+
+Remote proxy ("Ambassador") - we have client and server, instead of communicating between server's and client's 
+classes we create a proxy on client side, and a proxy on server side, and only the proxies communicate
+
+Virtual proxy - creates expensive object on first demand; it can also hold information about the object which is
+not instantiated yet (e.g. height and width of an image)
+
+Protection proxy - to control access
+
+Smart proxy - just an addition to an object, to have more control, e.g. lock/unlock, conuting number of references 
+(to later destroy if no references)
