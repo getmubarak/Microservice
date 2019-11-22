@@ -1,0 +1,14 @@
+The sidecar pattern consists of a main application—i.e. your web application—plus a helper container with a responsibility 
+that is essential to your application, but is not necessarily part of the application itself. eg. cross cutting concerns.
+
+The ambassador pattern is a useful way to connect containers with the outside world. An ambassador container is 
+essentially a proxy that allows other containers to connect to a port on localhost while the ambassador container 
+can proxy these connections to different environments depending on the cluster's needs.
+
+One of the best use-cases for the ambassador pattern is for providing access to a database. When developing locally, 
+you probably want to use your local database, while your test and production deployments want different databases again.
+
+Managing which database you connect to could be done through environment variables, but will mean your application changes 
+connection URLs depending on the environment. A better solution is for the application to always connect to localhost, 
+and let the responsibility of mapping this connecting to the right database fall to an ambassador container. Alternatively, 
+the ambassador could be sending requests to different shards of the database—the application itself doesn't need to worry.
