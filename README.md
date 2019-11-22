@@ -11,3 +11,6 @@ Microservice to Monolthic <br>
 https://segment.com/blog/goodbye-microservices/<br>
 Checklist<br>
 https://dwmkerr.com/the-death-of-microservice-madness-in-2018/<br>
+Testing<br>
+https://www.infoq.com/articles/twelve-testing-techniques-microservices-intro/
+https://www.infoq.com/articles/testing-techniques-microservices-use-cases/
