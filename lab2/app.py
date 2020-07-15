@@ -5,7 +5,9 @@ from bson.json_util import dumps
 import json
 
 app = Flask(__name__)
-client = MongoClient("172.17.0.3:27017")
+mongodb_host = os.environ.get('MONGO_HOST', 'localhost')
+mongodb_port = int(os.environ.get('MONGO_PORT', '27017'))
+client = MongoClient(mongodb_host, mongodb_port)   
 db = client.TodoDB
 
 @app.route("/add", methods = ['POST'])
