@@ -22,4 +22,6 @@ spec:
           env:
             - name: MONGO_HOST
               value: "mongo"
+            - name: MONGO_PORT
+              value: "27017"
           imagePullPolicy: Always
