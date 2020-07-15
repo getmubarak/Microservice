@@ -2,4 +2,7 @@
 Time : 30 minutes
 
 ## Step 1: run database ##
-$ docker run -d -p 27017:27017 --name mydb mongo
+https://www.katacoda.com/courses/kubernetes/creating-kubernetes-yaml-definitions
+
+https://www.katacoda.com/courses/kubernetes/getting-started-with-kubeadm
+
