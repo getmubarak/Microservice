@@ -37,6 +37,7 @@ $ curl http://127.0.0.1:5000/  <br/>
 
 ## step 7: remove local image ##
 $ docker ps  <br/>
-$ docker kill 34144376516a  <br/>
+$ docker kill container_id  <br/>
+$ docker rmi --force image_id <br/>
 $ docker system prune -a  <br/>
 
