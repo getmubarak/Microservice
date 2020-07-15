@@ -1,24 +1,17 @@
 # Create Micrservice Api and deploy in Docker #
 Time : 30 minutes
 
-## Step 1: Create a Docker Account ##
-https://hub.docker.com/
+## Step 1: run database ##
+$ docker run -d -p 27017:27017 --name mydb mongo
 
-## Step 2: login to lab ##
-https://labs.play-with-docker.com/
+## Step 2: get IP address of database container ##
+docker inspect mydb | grep IPAddress
 
-## Step 3: create files ##
-$ mkdir myapi <br/>
-$ cd myapi <br/>
+## Step 3: update code ##
 $ cat > app.py  <br/>
 {code}  <br/>
 ctl + c	  <br/>
-$ cat > requirements.txt  <br/>
-{code}  <br/>
-ctl+c  <br/>
-$ cat > Dockerfile  <br/>
-{code}  <br/>
-ctl+c  <br/>
+
 ## Step 4: build ##  
 $ docker build -t myapi:latest .   <br/>
 $ docker images  <br/>
@@ -39,3 +32,4 @@ $ docker ps  <br/>
 $ docker kill container_id  <br/>
 $ docker rmi --force image_id <br/>
 $ docker system prune -a  <br/>
+{ remove image from hub.docker.com }
