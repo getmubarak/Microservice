@@ -7,7 +7,7 @@ $ docker run -d -p 27017:27017 --name mydb mongo
 ## Step 2: get IP address of database container ##
 docker inspect mydb | grep IPAddress
 
-## Step 3: update code ##
+## Step 3: update code and update ip address ##
 $ cat > app.py  <br/>
 {code}  <br/>
 ctl + c	  <br/>
