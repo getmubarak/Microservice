@@ -33,7 +33,7 @@ $ docker push getmub/myapi  <br/>
 $ docker run -d -p 5000:5000 getmub/myapi  <br/>
 $ docker ps  <br/>
 $ curl --header "Content-Type: application/json" --request POST  --data '{"desc":"buy beer"}'  http://localhost:5000/add  <br/>
-$ curl http://127.0.0.1:5000/  <br/>
+$ curl http://127.0.0.1:5000/get  <br/>
 
 ## step 7: clean ##
 $ docker ps  <br/>
