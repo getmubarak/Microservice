@@ -2,9 +2,8 @@
 Time : 30 minutes
 
 ## Step 1: update code ##
-$ cat > app.py  <br/>
-{code}  <br/>
-ctl + c	  <br/>
+rm app.py <br/>
+wget https://raw.githubusercontent.com/getmubarak/Microservice/master/lab2/app.py <br/>
 
 ## Step 2: build , push  ## 
 $ docker build -t getmub/myapi .   <br/>
