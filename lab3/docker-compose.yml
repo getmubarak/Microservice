@@ -2,11 +2,29 @@ version: "3"
 services: 
     todoDB:
         image: "mongo"
-    
-    myreader:
+        ports:
+            - 27017:27017
+        networks:
+            - my-net
+        volumes:
+            - mongodb:/data/db
+            - mongoconfig:/data/configdb
+    todoApi:
         #build: .
         image: "getmub/myapi"
+        environment:
+            - MONGO_HOST=todoDB
+            - MONGO_PORT=27017
         depends_on: 
             - todoDB
         ports:
             - "5000:5000"
+        networks:
+            - my-net
+volumes:
+  # default dir on Ubuntu: /var/lib/docker/volumes
+  mongodb:
+  mongoconfig:
+networks:
+  my-net:
+    driver: bridge
