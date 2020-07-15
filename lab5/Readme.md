@@ -23,6 +23,19 @@ wget https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/tasks
 kubectl create -f tasksapp.yaml
 kubectl get deployments
 
+wget https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/tasksapp-svc.yaml
+kubectl create -f tasksapp-svc.yaml
+kubectl get svc tasksapp-svc
+
+curl --header "Content-Type: application/json" --request POST --data '{"desc":"buy beer"}' http://10.110.170.73:8080/add
+curl http://10.110.170.73:8080/get
+
+kubectl scale deployment tasksapp --replicas=3
+
 kubectl get pods
 kubectl describe pods ${POD_NAME}
 kubectl logs pod-crashloopbackoff-7f7c556bf5-9vc89
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
+kubectl proxy
+
