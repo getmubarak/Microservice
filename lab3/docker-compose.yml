@@ -1,0 +1,11 @@
+version: "3"
+services: 
+    todoDB:
+        image: "mongo"
+    
+    myreader:
+        build: .
+        depends_on: 
+            - todoDB
+        ports:
+            - "5000:5000"
