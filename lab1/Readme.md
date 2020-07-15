@@ -32,7 +32,7 @@ $ docker push getmub/myapi  <br/>
 ## step 6: run from hub ##
 $ docker run -d -p 5000:5000 getmub/myapi  <br/>
 $ docker ps  <br/>
-$ curl --header "Content-Type: application/json" --request POST  --data '{"desc":"buy beer"}'  http ://localhost:5000/add  <br/>
+$ curl --header "Content-Type: application/json" --request POST  --data '{"desc":"buy beer"}'  http://localhost:5000/add  <br/>
 $ curl http://127.0.0.1:5000/  <br/>
 
 ## step 7: remove local image ##
