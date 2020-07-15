@@ -25,6 +25,7 @@ $ curl http://127.0.0.1:5000/get  <br/>
 ## step 5: clean ##
 $ docker ps  <br/>
 $ docker kill container_id  <br/>
+$ docker images
 $ docker rmi --force image_id <br/>
 $ docker system prune -a  <br/>
 { remove image from hub.docker.com }
