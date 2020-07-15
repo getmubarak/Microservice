@@ -20,7 +20,6 @@ $ docker build -t myapi:latest .   <br/>
 $ docker images  <br/>
 
 ## Step 5: push to hub ##
-$ docker login -u getmub  <br/>
 $ docker tag myapi:latest getmub/myapi  <br/>
 $ docker push getmub/myapi  <br/>
 
