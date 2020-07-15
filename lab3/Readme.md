@@ -24,7 +24,9 @@ $ docker push getmub/myapi  <br/>
 $ docker-compose up -d 
 $ curl --header "Content-Type: application/json" --request POST  --data '{"desc":"buy beer"}'  http://localhost:5000/add  <br/>
 $ curl http://127.0.0.1:5000/get  <br/>
-
+Seeing all of the logs from the application deployed.<br/>
+$ docker-compose logs <br/>
+    
 ## Step 6:clean ##
 $ docker-compose down
 $ docker system prune -a  <br/>
