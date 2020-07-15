@@ -40,4 +40,4 @@ $ docker ps  <br/>
 $ docker kill container_id  <br/>
 $ docker rmi --force image_id <br/>
 $ docker system prune -a  <br/>
-
+{ remove image from hub.docker.com }
