@@ -15,18 +15,14 @@ $ vi app.py
 goto line 7 and update ip address
 client = MongoClient("172.17.0.3:27017/")
 :wq
-## Step 4: build and push to hub ## 
-$ docker build -t myapi:latest .   <br/>
-$ docker tag myapi:latest getmub/myapi  <br/>
+## Step 4: build , push , run ## 
+$ docker build -t getmub/myapi .   <br/>
 $ docker push getmub/myapi  <br/>
-
-## step 5: run from hub ##
 $ docker run -d -p 5000:5000 getmub/myapi  <br/>
-$ docker ps  <br/>
 $ curl --header "Content-Type: application/json" --request POST  --data '{"desc":"buy beer"}'  http://localhost:5000/add  <br/>
 $ curl http://127.0.0.1:5000/get  <br/>
 
-## step 6: clean ##
+## step 5: clean ##
 $ docker ps  <br/>
 $ docker kill container_id  <br/>
 $ docker rmi --force image_id <br/>
