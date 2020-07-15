@@ -5,7 +5,7 @@ services:
     
     myreader:
         #build: .
-        image:getmub/myapi
+        image: "getmub/myapi"
         depends_on: 
             - todoDB
         ports:
