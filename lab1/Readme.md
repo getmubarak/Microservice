@@ -12,13 +12,13 @@ https://labs.play-with-docker.com/
 $ mkdir myapi <br/>
 $ cd myapi <br/>
 $ cat > app.py  <br/>
-<code>  <br/>
+{code}  <br/>
 ctl + c	  <br/>
 $ cat > requirements.txt  <br/>
-<code>  <br/>
+{code}  <br/>
 ctl+c  <br/>
 $ cat > Dockerfile  <br/>
-<code>  <br/>
+{code}  <br/>
 ctl+c  <br/>
 ## Step 4: build ##  
 $ docker build -t myapi:latest .   <br/>
