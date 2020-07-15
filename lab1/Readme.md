@@ -8,7 +8,7 @@ https://hub.docker.com/
 ## Step 2: login to lab ##
 https://labs.play-with-docker.com/
 
-## Step 3: create directory ##
+## Step 3: create files ##
 $ mkdir myapi <br/>
 $ cd myapi <br/>
 $ cat > app.py  <br/>
