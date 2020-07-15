@@ -35,7 +35,7 @@ $ docker ps  <br/>
 $ curl --header "Content-Type: application/json" --request POST  --data '{"desc":"buy beer"}'  http://localhost:5000/add  <br/>
 $ curl http://127.0.0.1:5000/  <br/>
 
-## step 7: remove local image ##
+## step 7: clean ##
 $ docker ps  <br/>
 $ docker kill container_id  <br/>
 $ docker rmi --force image_id <br/>
