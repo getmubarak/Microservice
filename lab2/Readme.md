@@ -11,7 +11,10 @@ docker inspect mydb | grep IPAddress
 $ cat > app.py  <br/>
 {code}  <br/>
 ctl + c	  <br/>
-
+$ vi app.py
+goto line 7 and update ip address
+client = MongoClient("172.17.0.3:27017/")
+:wq
 ## Step 4: build ##  
 $ docker build -t myapi:latest .   <br/>
 $ docker images  <br/>
