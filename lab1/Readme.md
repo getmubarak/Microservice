@@ -1,7 +1,9 @@
-Lab 1: Create Micrservice Api and deploy in Docker
+Lab 1: 
+# Create Micrservice Api and deploy in Docker #
+
 Time : 30 minutes
 
-Step 1: Create a Docker Account
+## Step 1: Create a Docker Account ##
 https://hub.docker.com/
 
 Step 2: login to lab
