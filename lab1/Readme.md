@@ -20,46 +20,15 @@ myapi
 
 Step 4:
 $ cat > app.py
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route("/add", methods = ['POST'])
-def add_contact() :
-    data = json.loads(request.data)
-    desc = data['desc']
-    if desc :
-        # insert in database
-        return dumps({ 'message' : 'SUCCESS' })
-        
-@app.route("/get", methods = ['GET'])
-def get_all_contact() :
-    # get from database
-    return { '0':{'desc': 'buy grocery'},'1' : {'desc': 'pay bills'} }
-
-if __name__ == '__main__':
-    app.run(debug = True, host = '0.0.0.0')
-
-
+<code>
+	
 Step 5: 
 $ cat > requirements.txt
-flask
-pymongo
-
-flask_restful
+<code>
 	
 Step 6:
 $ cat > Dockerfile
-
-FROM python:3.7
-
-RUN mkdir /myapi
-WORKDIR /myapi
-ADD . /myapi/
-RUN pip install -r requirements.txt
-
-EXPOSE 5000
-CMD ["python", "/myapi/app.py"]
+<code>
 
 Step 7:
 $ docker build -t myapi:latest .
