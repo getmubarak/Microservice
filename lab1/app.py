@@ -1,4 +1,6 @@
 from flask import Flask
+from bson.json_util import dumps
+import json
 
 app = Flask(__name__)
 
@@ -13,7 +15,8 @@ def add_contact() :
 @app.route("/get", methods = ['GET'])
 def get_all_contact() :
     # get from database
-    return { '0':{'desc': 'buy grocery'},'1' : {'desc': 'pay bills'} }
+    return dumps({ '0':{'desc': 'buy grocery'},'1' : {'desc': 'pay bills'} })
 
 if __name__ == '__main__':
     app.run(debug = True, host = '0.0.0.0')
+    
