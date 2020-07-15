@@ -19,3 +19,10 @@ kubectl create -f mongo-svc.yaml
 kubectl get svc mongo
 curl 10.100.83.25:27017
 
+wget https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/tasksapp.yaml
+kubectl create -f tasksapp.yaml
+kubectl get deployments
+
+kubectl get pods
+kubectl describe pods ${POD_NAME}
+kubectl logs pod-crashloopbackoff-7f7c556bf5-9vc89
