@@ -6,9 +6,7 @@ Time : 30 minutes
 docker-compose -v
 
 ## Step 2: create compose file ##
-$ cat > docker-compose.yml  <br/>
-{code}  <br/>
-ctl + c	  <br/>
+$ wget https://raw.githubusercontent.com/getmubarak/Microservice/master/lab3/docker-compose.yml <br/>
 
 ## Step 3:run ##
 $ docker-compose up -d <br/>
