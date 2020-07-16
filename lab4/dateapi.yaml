@@ -1,0 +1,68 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dateapi
+  labels:
+    app: dateapi
+spec:
+  ports:
+  - port: 8080
+    name: http
+  selector:
+    app: dateapi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dateapi-v1
+  labels:
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dateapi
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: dateapi
+        version: v1
+    spec:
+      containers:
+      - name: helloworld
+        image: getmub/dateapi:v1
+        resources:
+          requests:
+            cpu: "100m"
+        imagePullPolicy: IfNotPresent #Always
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dateapi-v2
+  labels:
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dateapi
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: dateapi
+        version: v2
+    spec:
+      containers:
+      - name: dateapi
+        image: getmub/dateapi:v2
+        resources:
+          requests:
+            cpu: "100m"
+        imagePullPolicy: IfNotPresent #Always
+        ports:
+        - containerPort: 8080
