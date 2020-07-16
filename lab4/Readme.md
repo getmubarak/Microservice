@@ -1,8 +1,17 @@
 # Deploy Microservice to Kubernetis  #
 Time : 30 minutes
 
-## Step 1: run database ##
-https://www.katacoda.com/courses/kubernetes/creating-kubernetes-yaml-definitions
+https://www.katacoda.com/courses/istio/connecting-controlling-microservices/deploying-canary-releases#
 
-https://www.katacoda.com/courses/kubernetes/getting-started-with-kubeadm
+
+
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi.yaml
+
+kubectl get pods
+
+kubectl get svc
+
+curl http://10.102.109.133:8080
+
+kubectl delete deployment <name>
 
