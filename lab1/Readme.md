@@ -31,9 +31,16 @@ $ docker run -d -p 5000:5000 getmub/myapi  <br/>
 --name is to specify a name for the container <br/>
 -p local:container is to forward traffic from a local port to a port in the container <br/>
 
+Get container ID <br/>
 $ docker ps  <br/>
 $ curl --header "Content-Type: application/json" --request POST  --data '{"desc":"buy beer"}'  http://localhost:5000/add  <br/>
 $ curl http://127.0.0.1:5000/get  <br/>
+
+Print app output  <br/>
+$ docker logs <container id>  <br/>
+
+Enter the container  <br/>
+$ docker exec -it <container id> /bin/bash  <br/>
 
 ## step 7: clean ##
 $ docker ps  <br/>
