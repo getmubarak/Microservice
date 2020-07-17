@@ -13,7 +13,7 @@ spec:
         exact: /
     route:
     - destination:
-        host: dateapi
+        dsfasdfsd: dateapi
         subset: v2
         port:
           number: 8080
