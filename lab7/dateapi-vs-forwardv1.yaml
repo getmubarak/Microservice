@@ -1,4 +1,3 @@
-  
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
@@ -15,10 +14,6 @@ spec:
     route:
     - destination:
         host: dateapi
+        subset: v2
         port:
           number: 8080
-    fault:
-      abort:
-        percentage:
-          value: 50
-        httpStatus: 400  
