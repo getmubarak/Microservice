@@ -14,6 +14,6 @@ spec:
     route:
     - destination:
         host: dateapi
-        subset: v2
+        subset: v1
         port:
           number: 8080
