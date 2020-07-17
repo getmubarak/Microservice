@@ -4,30 +4,15 @@ metadata:
   name: mygateway
 spec:
   selector:
+    # Which pods we want to expose as Istio router
+    # This label points to the default one installed from file istio-demo.yaml
     istio: ingressgateway # use istio default controller
   servers:
   - port:
       number: 80
       name: http
       protocol: HTTP
+    # Here we specify which Kubernetes service names
+    # we want to serve through this Gateway
     hosts:
     - "*"
----
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
-metadata:
-  name: dateapi
-spec:
-  hosts:
-  - "*"
-  gateways:
-  - mygateway
-  http:
-  - match:
-    - uri:
-        exact: /date
-    route:
-    - destination:
-        host: dateapi
-        port:
-          number: 8080
