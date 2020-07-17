@@ -10,7 +10,7 @@ spec:
   http:
   - match:
     - uri:
-        exact: /dateapi
+        exact: /
     route:
     - destination:
         host: dateapi
