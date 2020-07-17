@@ -28,7 +28,6 @@ kubectl get pod -n istio-system
 
 
 Istio comes bundled with a hello world example application. 
-kubectl apply -f samples/helloworld/helloworld.yaml
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi.yaml
 
 kubectl get pods
@@ -37,8 +36,7 @@ We just deployed one container within the pod, but we are seeing two running in 
 kubectl get services
 
 make cURL request to the helloworld application by running following command.
-curl http://10.106.138.233:5000/hello
-curl http://10.106.138.233:5000/
+curl http://10.106.138.233:8080/
 
 An Istio ingress gateway allows you to define entry points into the service mesh through which all incoming traffic flows. 
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab6/mygateway.yaml
