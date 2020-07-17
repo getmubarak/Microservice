@@ -29,7 +29,6 @@ We just deployed one container within the pod, but we are seeing two running in 
 
 kubectl get services
 
-
 make cURL request to the helloworld application by running following command.
 curl http://10.106.138.233:5000/hello
 
