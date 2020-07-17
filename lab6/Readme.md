@@ -52,6 +52,7 @@ kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/maste
 
 You can see the virtual service is running using:
 kubectl get virtualservices.networking.istio.io
+kubectl get virtualservice,gateway
 
 curl http://10.100.172.29:80
  
