@@ -1,0 +1,27 @@
+#The response from a network call can be artificially delayed, giving you a chance to test how poor networking or unresponsive applications can affect your code.
+#The fault property has been configured to add a delay of 5 seconds to 50% of network requests:
+
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: dateapi-virtual-service
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - mygateway
+  http:
+  - match:
+    - uri:
+        exact: /
+    route:
+    - destination:
+        host: dateapi
+        port:
+          number: 8080
+    fault:
+      delay:
+        percentage:
+          value: 50
+        fixedDelay: 5s        
+    
