@@ -2,8 +2,6 @@ Traffic Management
 
 Routing
 
-Canary testing -- 
-A canary deployment is a strategy for safely rolling out a new version of a service. With Istio, you can use percentage-based traffic splitting to direct a small amount of traffic to the new version. Then you can run a canary analysis on v2, and finally direct more traffic at the new version until it's serving all traffic.
 
 
 
@@ -11,8 +9,7 @@ Serve different versions to different users -- Users on different plans or from 
 A/B testing.
 Gradual rollouts.
 
-Blue-green deployment is a technique that reduces downtime and risk by running two identical production environments called Blue and Green. At any time, only one of the environments is live, with the live environment serving all production traffic. For this example, Blue is currently live and Green is idle.
-Once you have deployed and fully tested the software in Green, you switch the router so all incoming requests now go to Green instead of Blue. Green is now live, and Blue is idle.
+
 
 A/B Testing is used when we have two versions of an application (usually those differ visually) that we are not 100% sure which will increase user interaction and so we try both versions at the same time and collect metrics.
 
