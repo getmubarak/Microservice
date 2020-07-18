@@ -1,3 +1,5 @@
+Similar to compartments on a ship, bulkheads are intended to partition the functionality of software into sections that can fail individually without causing the overall application to become unresponsive. They prevent errors from cascading further, while the rest of the application stays functional.
+
 it helps to contain failures, attacks or performance degradations from spreading to other portions of the system because they are essentially partitioned.
 
 
