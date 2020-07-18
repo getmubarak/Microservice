@@ -6,5 +6,3 @@ Then you can run a canary analysis on v2, and finally direct more traffic at the
 
 
 
- A/B testing is primarily used to review the effectiveness of a change and how the market reacts to the change. The new features will be rolled out to a certain set of users. You can implement this with application-level switches (ie, smart logic that knows when to display certain UI controls), static switches (in the application), and also using Canary releases.
- 
