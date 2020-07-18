@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: dateapi-virtual-service
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - mygateway
+  http:
+  - route:
+    - destination:
+        host: dateapi
+        subset: v2
+        port:
+          number: 8080
+      weight: 50
+    - destination:
+        host: dateapi
+        subset: v1
+        port:
+          number: 8080
+      weight: 50
