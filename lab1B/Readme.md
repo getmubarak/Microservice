@@ -1,3 +1,7 @@
+Lab 2: 
+# Create Api Version 2 and deploy in Docker #
+Time : 30 minutes
+
 rm server.js
 
 wget https://raw.githubusercontent.com/getmubarak/Microservice/master/lab1B/server.js
