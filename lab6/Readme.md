@@ -42,7 +42,8 @@ You can see the ingress gateway is running using:
 kubectl get gateway -A
 kubectl get svc istio-ingressgateway -n istio-system
 kubectl describe svc istio-ingressgateway -n istio-system |grep http2
-
+<get port>
+ 
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab6/dateapi_virtualservice.yaml
 
 You can see the virtual service is running using:
@@ -50,7 +51,12 @@ kubectl get virtualservices.networking.istio.io
 kubectl get virtualservice,gateway
 
 curl http://10.100.172.29:80
- 
+
+<
+In KataCoda to view the results on browser, click +
+select port to view on Host1
+Enter gateway port>
+
 export INGRESS_HOST=$(sudo minikube ip)
 export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
 curl http://$INGRESS_HOST:$INGRESS_PORT
