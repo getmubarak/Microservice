@@ -1,0 +1,1 @@
+Rewriting requests is much like redirecting them, only the routing is all done server-side, and the client does not know that the request was changed to a new path. The VirtualService resource below rewrites requests made to the root path of one Service resource and routes them to a new path on a new Service resource:
