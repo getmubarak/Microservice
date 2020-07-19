@@ -13,4 +13,4 @@ spec:
         host: dateapi
         port:
           number: 8080
-    timeout: "1s"      
+    timeout: "3s"      
