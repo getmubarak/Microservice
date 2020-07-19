@@ -8,8 +8,8 @@ spec:
   gateways:
   - mygateway
   http:
-    route:
-    - destination:
-        host: dateapi
-        port:
-          number: 8080
+    - route:
+      - destination:
+          host: dateapi
+          port:
+            number: 8080
