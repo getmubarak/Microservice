@@ -17,8 +17,7 @@ spec:
           number: 8080
     retries:
       attempts: 3
-      perTryTimeout: "2s"
-      retryOn: "5xx"      
+      perTryTimeout: "2s"   
     timeout: "10s"      
     
     
