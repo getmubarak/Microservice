@@ -10,7 +10,7 @@ const HOST = '0.0.0.0';
 const app = express();
 app.get('/', (req, res) => {
         var datetime = new Date();
-        var waitTill = new Date(new Date().getTime() + seconds * 5000);
+        var waitTill = new Date(new Date().getTime() + 5000);
         while(waitTill > new Date()){}
         res.send(datetime.toISOString());
 });
