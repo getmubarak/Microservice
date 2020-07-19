@@ -10,6 +10,7 @@ const HOST = '0.0.0.0';
 const app = express();
 app.get('/', (req, res) => {
         var datetime = new Date();
+        sleep(5000);
         res.send(datetime.toISOString());
 });
 
