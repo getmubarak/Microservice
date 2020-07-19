@@ -62,7 +62,7 @@ kubectl get virtualservices.networking.istio.io
 
 kubectl get virtualservice,gateway
 
-curl http://10.100.172.29:80
+curl http://10.100.172.29:80/date
 
 <
 In KataCoda to view the results on browser, click +
@@ -73,7 +73,7 @@ export INGRESS_HOST=$(sudo minikube ip)
 
 export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
 
-curl http://$INGRESS_HOST:$INGRESS_PORT
+curl http://$INGRESS_HOST:$INGRESS_PORT/date
 
 ## To access the dashboard, you can use istioctl to open a proxy. use the default username admin and default password admin to log in
 istioctl dashboard kiali
