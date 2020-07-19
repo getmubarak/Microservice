@@ -8,9 +8,6 @@ spec:
   gateways:
   - mygateway
   http:
-  - match:
-    - uri:
-        exact: /
     route:
     - destination:
         host: dateapi
