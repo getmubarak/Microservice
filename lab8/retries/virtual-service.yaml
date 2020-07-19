@@ -17,8 +17,8 @@ spec:
           number: 8080
     retries:
       attempts: 3
-      perTryTimeout: "2s"   
-    timeout: "10s"      
+      perTryTimeout: "6s"   
+    timeout: "6s"      
     
     
 # The timeout was set to work around a bug in Istio that sets perTryTimeout to 0 if the timeout is not set:
