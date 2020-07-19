@@ -1,9 +1,6 @@
-# Connect Microservice Service to Database  #
+# Connect Microservice Service with Database Access #
 Time : 30 minutes
 
-Lab 1: 
-# Create Micrservice Api and deploy in Docker #
-Time : 30 minutes
 
 ## Step 1: create files ##
 mkdir todoapi <br/>
