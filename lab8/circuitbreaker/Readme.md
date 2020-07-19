@@ -1,3 +1,6 @@
+
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab8/circuitbreaker/destination-rule.yaml
+
 Circuit Breaker With Outlier Detection
 
 Downstream clients need to be protected from excessive slowness of upstream services. 
