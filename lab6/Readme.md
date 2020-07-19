@@ -26,7 +26,7 @@ Minimal — It contains a minimum amount of features just to support traffic man
 ## Label the namespaces on which you want to enable Istio to inject sidecar containers automatically. 
 kubectl label namespace default istio-injection=enabled
 
-##Ensure that there are no issues with the configuration:
+## Ensure that there are no issues with the configuration:
 istioctl analyze
 
 kubectl get pod -n istio-system
