@@ -1,3 +1,6 @@
+https://www.katacoda.com/courses/istio/deploy-istio-on-kubernetes
+
+
 1,  deploy dashboard serive on master node:
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml
 
