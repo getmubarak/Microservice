@@ -8,10 +8,7 @@ spec:
   gateways:
   - mygateway
   http:
-  - match:
-    - uri:
-        exact: /
-    route:
+  - route:
     - destination:
         host: dateapi
         subset: v2
