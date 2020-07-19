@@ -1,3 +1,6 @@
+# Deploy Istio Service Mesh #
+Time : 30 minutes
+
 start a Kubernetes cluster
 https://www.katacoda.com/courses/kubernetes/installing-weave-scope-on-kubernetes
 
