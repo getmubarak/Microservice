@@ -9,8 +9,14 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
+        console.log('entered get date');
         var datetime = new Date();
+        
+        var waitTill = new Date(new Date().getTime() + 5000);
+        while(waitTill > new Date()){}
+        
         res.send(datetime.toISOString().slice(0,10));
+        console.log('completed get date');
 });
 
 app.listen(PORT, HOST);
