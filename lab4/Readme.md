@@ -3,13 +3,15 @@ Time : 30 minutes
 
 https://www.katacoda.com/courses/istio/connecting-controlling-microservices/deploying-canary-releases#
 
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi-deployment-v1.yaml
 
-
-kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi.yaml
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi-deployment-v2.yaml
 
 kubectl get deployments
 
 kubectl get pods
+
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi-service.yaml
 
 kubectl get svc
 
@@ -35,3 +37,4 @@ curl http://<public-node-ip>:<node-port>
   
 kubectl delete deployment <name>
 
+  
