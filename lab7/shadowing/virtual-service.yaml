@@ -4,17 +4,20 @@ metadata:
   name: dateapi-virtual-service
 spec:
   hosts:
-    - dateapi        
+  - "*"
+  gateways:
+  - mygateway
   http:
   - route:
     - destination:
-        host: dateapi 
+        host: dateapi
+        subset: v2
+        port:
+          number: 8080
+    mirror:
+        host: dateapi
         subset: v1
         port:
           number: 8080
-    mirror:             
-      host: dateapi    
-      subset: v2
-      port:
-          number: 8080
+          
           
