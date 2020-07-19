@@ -4,13 +4,13 @@ Time : 30 minutes
 ## start a Kubernetes cluster
 https://www.katacoda.com/courses/kubernetes/installing-weave-scope-on-kubernetes
 
-##download and extract the latest release
+## download and extract the latest release
 curl -L https://istio.io/downloadIstio | sh -
 
 ## Move to the Istio package directory
 cd istio-1.6.5
 
-##Add the istioctl client to your path
+## Add the istioctl client to your path
 export PATH=$PWD/bin:$PATH
 
 ## Install Istio 
