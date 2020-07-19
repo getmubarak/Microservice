@@ -1,6 +1,5 @@
 start a Kubernetes cluster
-https://katacoda.com/courses/kubernetes/create-kubernetes-ingress-routes
-
+https://www.katacoda.com/courses/kubernetes/installing-weave-scope-on-kubernetes
 
 download and extract the latest release
 curl -L https://istio.io/downloadIstio | sh -
@@ -23,11 +22,9 @@ kubectl label namespace default istio-injection=enabled
 
 Ensure that there are no issues with the configuration:
 istioctl analyze
-
 kubectl get pod -n istio-system
 
-
-Istio comes bundled with a hello world example application. 
+deploy
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi.yaml
 
 kubectl get pods
