@@ -34,7 +34,7 @@ Get container ID <br/>
 $ docker ps  <br/>
 Print app output  <br/>
 $ docker logs <container id>  <br/>
-$ curl http://127.0.0.1:8080/  <br/>
+$ curl http://127.0.0.1:8080/date  <br/>
 
 Enter the container  <br/>
 $ docker exec -it <container id> /bin/bash  <br/>
