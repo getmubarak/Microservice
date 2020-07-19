@@ -1,3 +1,6 @@
+https://medium.com/@chris_linguine/how-to-monitor-distributed-logs-in-kubernetes-with-the-efk-stack-1218a565ce0c
+
+
 In traditional server environments, application logs are written to a file such as /var/log/app.log. 
 These files are then viewed on each individual server or sent to a central repository for analysis and or retention.
 
