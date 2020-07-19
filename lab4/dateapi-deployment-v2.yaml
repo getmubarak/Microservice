@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dateapi-v2
+  labels:
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dateapi
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: dateapi
+        version: v2
+    spec:
+      containers:
+      - name: dateapi
+        image: getmub/dateapi:v2
+        resources:
+          requests:
+            cpu: "100m"
+        imagePullPolicy: IfNotPresent #Always
+        ports:
+        - containerPort: 8080
