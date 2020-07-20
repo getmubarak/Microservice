@@ -1,11 +1,26 @@
 https://www.katacoda.com/courses/istio/deploy-istio-on-kubernetes
 
 
-1,  deploy dashboard serive on master node:
+## 1,  deploy dashboard serive on master node:
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml
 
-2, start proxy: 
+
+## 2A. (for local terminal) start proxy: 
 kubectl proxy&
+
+## 2B. (cloud)  change service “type” from ClusterIP to NodePort:
+kubectl  edit service kubernetes-dashboard -n kubernetes-dashboard
+...
+type: NodePort                   ### clusterIP to NodePort
+
+2. Following command will give us mapped port to dash-board service
+kubectl get services -n kubernetes-dashboard
+
+Retrieve an authentication token for the eks-admin service account. Copy the <authentication_token> value from the output. You use this token to connect to the dashboard.
+
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')
+
 
 3, create your own secret and obtain the token:
 kubectl create serviceaccount <account name>
