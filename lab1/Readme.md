@@ -3,7 +3,7 @@ Lab 1:
 Time : 30 minutes
 
 ## Step 1: Create a Docker Account ##
-https://hub.docker.com/
+https://hub.docker.com/ <br/>
 $ docker login -u getmub  <br/>
 
 ## Step 2: login to lab ##
