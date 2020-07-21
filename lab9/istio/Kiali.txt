@@ -22,10 +22,7 @@ data:
   passphrase: $KIALI_PASSPHRASE
 EOF
 
-istioctl install --set addonComponents.grafana.enabled=true
 istioctl install --set values.kiali.enabled=true 
-istioctl install --set values.prometheus.enabled=true
-istioctl install --set values.tracing.enabled=true
 
 kubectl -n istio-system get svc kiali
 
