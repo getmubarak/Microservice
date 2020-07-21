@@ -12,3 +12,6 @@ kubectl get virtualservices.networking.istio.io
 kubectl get virtualservice,gateway
 kubectl get svc istio-ingressgateway -n istio-system
 kubectl describe svc istio-ingressgateway -n istio-system |grep http2
+curl -sL https://istio.io/downloadIstioctl | sh -
+export PATH=$PATH:$HOME/.istioctl/bin
+istioctl proxy-status
