@@ -1,0 +1,38 @@
+curl -sL https://istio.io/downloadIstioctl | sh -
+export PATH=$PATH:$HOME/.istioctl/bin
+istioctl proxy-status
+
+KIALI_USERNAME=$(read -p 'Kiali Username: ' uval && echo -n $uval | base64)
+KIALI_PASSPHRASE=$(read -sp 'Kiali Passphrase: ' pval && echo -n $pval | base64)
+
+NAMESPACE=istio-system
+kubectl create namespace $NAMESPACE
+
+cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: Secret
+metadata:
+  name: kiali
+  namespace: $NAMESPACE
+  labels:
+    app: kiali
+type: Opaque
+data:
+  username: $KIALI_USERNAME
+  passphrase: $KIALI_PASSPHRASE
+EOF
+
+istioctl install --set addonComponents.grafana.enabled=true
+istioctl install --set values.kiali.enabled=true 
+istioctl install --set values.prometheus.enabled=true
+istioctl install --set values.tracing.enabled=true
+
+kubectl -n istio-system get svc kiali
+
+kubectl patch service kiali --patch '{"spec":{"type":"LoadBalancer"}}' -n istio-system
+
+kubectl -n istio-system get service kiali -o jsonpath='{.status.loadBalancer.ingress[0].ip}
+
+kubectl -n istio-system get service kiali -o jsonpath='{.spec.ports[?(@.name=="http-kiali")].port}'
+
+Navigate to the Kiali URL (for example, http://52.150.35.253:20001/kiali/
