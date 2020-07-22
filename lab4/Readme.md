@@ -26,8 +26,16 @@ curl http://10.102.109.133:8080
 
 ## Create a Service with node port
 ClusterIP is only reachable inside a Kubernetes cluster, but what if we need to access some services from outside of the cluster?
-With NodePort, Kubernetes creates a port for a Service on the host, which allows access to the service from the node network. 
 
+1. Lets say the Kubernetes service is listening on port 80 <br/>
+2. we have 3 K8s host nodes  <br/>
+IPs 10.10.10.1, 10.10.10.2, 10.10.10.3 <br/>
+3. the Nodeport picked at random was 31852. <br/>
+4. With NodePort, Kubernetes Exposes the service on each Node’s 31852 .<br>
+4. A client that exists outside of the cluster could visit <br/>
+10.10.10.1:31852, 10.10.10.2:31852, or 10.10.10.3:31852 <br/>
+5. Kubeproxy will forward the request to mynodeportservice's port 80 <br>
+  
 kubectl delete svc dateapi
 
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi-service-nodeport.yaml
