@@ -84,14 +84,6 @@ export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -
 
 curl http://$INGRESS_HOST:$INGRESS_PORT/date
 
-## The istioctl tool is a configuration command line utility
-curl -sL https://istio.io/downloadIstioctl | sh -
-
-## Add the istioctl client to your path
-export PATH=$PATH:$HOME/.istioctl/bin
-
-## get an overview of your mesh 
-istioctl proxy-status
 
 
 
