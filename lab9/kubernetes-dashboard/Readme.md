@@ -3,9 +3,9 @@
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml
 
 ## 2. (cloud)  change service “type” from ClusterIP to NodePort:
-kubectl  edit service kubernetes-dashboard -n kubernetes-dashboard
-...
-type: NodePort                   ### clusterIP to NodePort
+kubectl  edit service kubernetes-dashboard -n kubernetes-dashboard <br/>
+... <br/>
+type: NodePort                   ### clusterIP to NodePort <br/>
 
 ## 3. Following command will give us mapped port to dash-board service
 kubectl get services -n kubernetes-dashboard
