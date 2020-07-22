@@ -25,14 +25,13 @@ Demo — You can use it for playing around with Istio and learning, especially w
 
 Minimal — It contains a minimum amount of features just to support traffic management.
 
-## check Istio status
-istioctl proxy-status
-
 ## Label the namespaces on which you want to enable Istio to inject sidecar containers automatically. 
 kubectl label namespace default istio-injection=enabled
 
 ## Ensure that there are no issues with the configuration:
 istioctl analyze
+
+istioctl proxy-status
 
 kubectl get pod -n istio-system
 
