@@ -37,12 +37,12 @@ kubectl get svc
 NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          
 dateapi      NodePort    10.98.167.124   <none>        8080:30007/TCP 
 
-## From within the cluster 
+### From within the cluster 
 curl http://10.98.167.124:8080/date
 
-## From outside the cluster
+### From outside the cluster
 
-curl http://<public ip> :30007/date
+http://<public ip> :30007/date
 
 How you get this address depends on how you set up your cluster. For example, if you are using Minikube, you can see the node address by running kubectl cluster-info.
 
@@ -50,4 +50,21 @@ kubectl cluster-info
 
 note: you can also create a Service with NodePort using expose command
 kubectl expose deployment dateapi-v1 --type=NodePort --name=dateapi
+
+## Create a Service with load balancer
+A single node is a single point of failure for the system. Once the node is down, clients can’t access the cluster any more. A service can be declared as LoadBalancer type to create a layer 4 load balancer in front of multiple nodes. As this layer 4 load balancer is outside of the Kubernetes network, a Cloud Provider Controller is needed for its provision. This Cloud Provider Controller watches the Kubernetes master for the addition and removal of Service resources and configures a layer 4 load balancer in the cloud provider network to proxy the NodePorts on multiple Kubernetes nodes.
+
+kubectl delete svc dateapi
+
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi-service-nodeport.yaml
+
+kubectl get svc
+
+NAME         TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          
+dateapi      LoadBalancer   10.96.30.191   172.17.0.66   8080:32452/TCP
+
+http://172.17.0.66:32452/date
+
+
+
 
