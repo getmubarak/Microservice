@@ -4,6 +4,7 @@ from pymongo import MongoClient
 from bson.json_util import dumps
 import json
 import socket
+import os
 
 app = Flask(__name__)
 mongodb_host = os.environ.get('MONGO_HOST', 'localhost')
