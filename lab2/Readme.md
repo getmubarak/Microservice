@@ -14,7 +14,7 @@ $ docker build -t getmub/todoapi .   <br/>
 $ docker push getmub/todoapi  <br/>
 
 ## Step 3: create network ##
-$ docker network create mynet
+$ docker network create mynet <br/>
 $ docker network ls
 
 ## Step 4: run database ##
@@ -35,6 +35,6 @@ $ docker kill container_id  <br/>
 $ docker images
 $ docker rmi --force image_id <br/>
 $ docker system prune -a  <br/>
-$ docker network disconnect -f mynet todoDB
-$ docker network rm mynet
-{ remove image from hub.docker.com }
+$ docker network disconnect -f mynet todoDB  <br/>
+$ docker network rm mynet  <br/>
+{ remove image from hub.docker.com }  <br/>
