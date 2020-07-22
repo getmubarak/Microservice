@@ -1,8 +1,11 @@
 # Deploy Istio Service Mesh #
 Time : 30 minutes
 
-## start a Kubernetes cluster
-https://www.katacoda.com/courses/kubernetes/installing-weave-scope-on-kubernetes
+A service mesh ensures that communication among containerized and often ephemeral application infrastructure services is fast, reliable, and secure. The mesh provides critical capabilities including service discovery, load balancing, encryption, observability, traceability, authentication and authorization, and support for the circuit breaker pattern.
+
+The service mesh is usually implemented by providing a proxy instance, called a sidecar, for each service instance. Sidecars handle interservice communications, monitoring, and security‑related concerns – indeed, anything that can be abstracted away from the individual services. This way, developers can handle development, support, and maintenance for the application code in the services; operations teams can maintain the service mesh and run the app.
+
+Istio, backed by Google, IBM, and Lyft, is currently the best‑known service mesh architecture.
 
 ## download and extract the latest release
 curl -L https://istio.io/downloadIstio | sh -
@@ -31,7 +34,7 @@ istioctl analyze
 
 kubectl get pod -n istio-system
 
-## deploy
+## deploy microservice
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi.yaml
 
 kubectl get pods
@@ -40,13 +43,17 @@ We just deployed one container within the pod, but we are seeing two running in 
 
 kubectl get services
 
-## make cURL request to the helloworld application by running following command.
+## make a request to the api.
 curl http://10.106.138.233:8080/
 
-## An Istio ingress gateway allows you to define entry points into the service mesh through which all incoming traffic flows. 
+## Create a ingress gateway 
+Allocating a random port or external load balancer is easy to set in motion, but comes with unique challenges. Defining many NodePort services creates a tangle of random ports. Defining many Load Balancer services leads to paying for more cloud resources than desired. It’s not possible to avoid completely, but perhaps it could be reduced, contained, so that you would only need to allocate one random port or one load balancer to expose many internal services? The platform needed a new layer of abstraction, one that could consolidate many services behind a single entrypoint.
+An Istio ingress gateway allows you to define entry points into the service mesh through which all incoming traffic flows. 
+
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab6/mygateway.yaml
 
-## You can see the ingress gateway is running using:
+## check ingress gateway is running :
+
 kubectl get gateway -A
 
 kubectl get svc istio-ingressgateway -n istio-system
@@ -55,9 +62,11 @@ kubectl describe svc istio-ingressgateway -n istio-system |grep http2
 
 <get port>
  
+## create a virtual service :
+
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab6/dateapi_virtualservice.yaml
 
-## You can see the virtual service is running using:
+## check virtual service is running :
 kubectl get virtualservices.networking.istio.io
 
 kubectl get virtualservice,gateway
