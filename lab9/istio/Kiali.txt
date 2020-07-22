@@ -1,12 +1,8 @@
-curl -sL https://istio.io/downloadIstioctl | sh -
-export PATH=$PATH:$HOME/.istioctl/bin
-istioctl proxy-status
 
-KIALI_USERNAME=$(read -p 'Kiali Username: ' uval && echo -n $uval | base64)
 KIALI_PASSPHRASE=$(read -sp 'Kiali Passphrase: ' pval && echo -n $pval | base64)
+KIALI_USERNAME=$(read -p 'Kiali Username: ' uval && echo -n $uval | base64)
 
 NAMESPACE=istio-system
-kubectl create namespace $NAMESPACE
 
 cat <<EOF | kubectl apply -f -
 apiVersion: v1
@@ -28,7 +24,7 @@ kubectl -n istio-system get svc kiali
 
 kubectl patch service kiali --patch '{"spec":{"type":"LoadBalancer"}}' -n istio-system
 
-kubectl -n istio-system get service kiali -o jsonpath='{.status.loadBalancer.ingress[0].ip}
+kubectl -n istio-system get service kiali -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
 
 kubectl -n istio-system get service kiali -o jsonpath='{.spec.ports[?(@.name=="http-kiali")].port}'
 
