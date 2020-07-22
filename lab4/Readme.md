@@ -64,7 +64,7 @@ A single node is a single point of failure for the system. Once the node is down
 
 kubectl delete svc dateapi
 
-kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi-service-nodeport.yaml
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab4/dateapi-service-lb.yaml
 
 kubectl get svc
 
