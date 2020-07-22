@@ -26,3 +26,6 @@ NAME    TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)
 grafana   LoadBalancer   10.97.34.213   172.17.0.20   20001:31948/TCP
 
 (for example, http://172.17.0.20:31948/dashboard/db/istio-mesh-dashboard )
+
+# generate a load for 5 minutes using the istio/fortio image
+kubectl run fortio --image=istio/fortio -- load -t 5m -qps 5 http://10.101.94.93:8080/date
