@@ -1,8 +1,6 @@
 # Connect Microservice Service with Database Access in Kubernetes #
 Time : 30 minutes
 
-Deployments are well-suited for stateless applications that use ReadOnlyMany or ReadWriteMany volumes mounted on multiple replicas, but are not well-suited for workloads that use ReadWriteOnce volumes. For stateful applications using ReadWriteOnce volumes, use StatefulSets. StatefulSets are designed to deploy stateful applications and clustered applications that save data to persistent storage, such as Compute Engine persistent disks. StatefulSets are suitable for deploying Kafka, MySQL, Redis, ZooKeeper, and other applications needing unique, persistent identities and stable hostnames.
-
 ## create a storage volume of 256 MB
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/mongo-pv.yaml
 
@@ -52,5 +50,7 @@ kubectl describe pods ${POD_NAME}
 
 kubectl logs pod-crashloopbackoff-7f7c556bf5-9vc89
 
+# stateful sets
+Deployments are well-suited for stateless applications that use ReadOnlyMany or ReadWriteMany volumes mounted on multiple replicas, but are not well-suited for workloads that use ReadWriteOnce volumes. For stateful applications using ReadWriteOnce volumes, use StatefulSets. StatefulSets are designed to deploy stateful applications and clustered applications that save data to persistent storage, such as Compute Engine persistent disks. StatefulSets are suitable for deploying Kafka, MySQL, Redis, ZooKeeper, and other applications needing unique, persistent identities and stable hostnames.
 
 
