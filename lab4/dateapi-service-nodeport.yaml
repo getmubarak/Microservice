@@ -9,5 +9,6 @@ spec:
   ports:
   - port: 8080
     name: http
+    nodePort: 30007
   selector:
     app: dateapi
