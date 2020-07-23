@@ -17,10 +17,7 @@ Service dependency analysis <br/>
 Performance / latency optimization <br/>
 
 ## install
-istioctl install --set profile=demo \\
---set values.tracing.enabled=true  \\
---set values.kiali.enabled=true  \\
---set addonComponents.grafana.enabled=true
+istioctl install --set profile=demo --set values.tracing.enabled=true  --set values.kiali.enabled=true  --set addonComponents.grafana.enabled=true
 
 ## check the services 
 kubectl -n istio-system get svc
