@@ -1,11 +1,14 @@
-Setup some tunnels to each of the services:
-Open up three new shell windows and type in one line into each:
 
-kubectl -n istio-system port-forward $(kubectl -n istio-system get pod -l app=grafana -o jsonpath='{.items[0].metadata.name}') 3000:3000
+## Kiali - Observability
+What microservices are part of my Istio service mesh and how are they connected?
 
-kubectl port-forward -n istio-system $(kubectl get pod -n istio-system -l app=jaeger -o jsonpath='{.items[0].metadata.name}') 16686:16686
+answers who is calling who, which version of a service has failures etc.
 
-kubectl -n istio-system port-forward $(kubectl -n istio-system get pod -l app=kiali -o jsonpath='{.items[0].metadata.name}') 20001:20001
+## Grafana – Metrics Visualization
+The metrics collected by Istio are scraped into Prometheus and visualized using Grafana.
+
+## Jaeger Tracer 
+ Tracing requests throughout services.
 
 Open up a browser (three tabs) and go to:
 Kiali http://localhost:20001/kiali (username: admin, password: mysecret)
