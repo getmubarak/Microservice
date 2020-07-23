@@ -1,3 +1,4 @@
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab8/circuitbreaker/dateapi-virtual-service.yaml
 
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab8/circuitbreaker/destination-rule.yaml
 
