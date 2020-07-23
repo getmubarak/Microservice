@@ -1,7 +1,11 @@
- It is used for monitoring and troubleshooting microservices-based distributed systems, including:
 
-Distributed context propagation
-Distributed transaction monitoring
-Root cause analysis
-Service dependency analysis
-Performance / latency optimization
+
+
+istioctl install --set values.tracing.enabled=true
+
+
+
+
+You can access the Jaeger dashboard through a web browser with 
+http://<Exterternal IP>:<Node Port>
+ 
