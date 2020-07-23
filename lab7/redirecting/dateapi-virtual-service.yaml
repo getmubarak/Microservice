@@ -19,4 +19,4 @@ spec:
         exact: "/"
     redirect:
       uri: /date
-      authority: webserverv1
+      authority: dateapi
