@@ -7,5 +7,6 @@ Then you can run a canary analysis on v2, and finally direct more traffic at the
 
 
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab7/canary/virtual-service.yaml
+
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab7/canary/destination-rule.yaml
 
