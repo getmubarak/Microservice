@@ -1,4 +1,7 @@
 
+## install
+istioctl install --set profile=demo --set values.tracing.enabled=true  --set values.kiali.enabled=true  --set addonComponents.grafana.enabled=true
+
 ## Kiali - Observability
 What microservices are part of my Istio service mesh and how are they connected?
 
