@@ -23,4 +23,4 @@ spec:
       http:
         http1MaxPendingRequests: 1
         maxRequestsPerConnection: 1
-    timeout: "1s"  
+
