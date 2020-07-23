@@ -18,5 +18,5 @@ spec:
     - uri:
         exact: "/"
     redirect:
-      uri: /redirected
+      uri: /date
       authority: webserverv1
