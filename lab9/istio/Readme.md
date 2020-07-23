@@ -48,6 +48,6 @@ while true; do <br>
 done <br>
 
 # Open up a browser (three tabs) and go to:
-Kiali http://<Exterternal IP>:<Node Port>/kiali (username: admin, password: mysecret)
-Grafana http://<Exterternal IP>:<Node Port>/dashboard/db/istio-dashboard
-Jaeger http://<Exterternal IP>:<Node Port>
+Kiali http://Exterternal IP:Node Port/kiali (username: admin, password: mysecret) <br>
+Grafana http://Exterternal IP:Node Port/dashboard/db/istio-dashboard <br>
+Jaeger http://Exterternal IP:Node Port <br>
