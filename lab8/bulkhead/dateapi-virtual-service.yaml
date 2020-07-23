@@ -23,9 +23,3 @@ spec:
       http:
         http1MaxPendingRequests: 1
         maxRequestsPerConnection: 1
-    fault:
-      delay:
-        percentage:
-          value: 100
-        fixedDelay: 15s 
-    timeout: "1s" 
