@@ -44,11 +44,11 @@ kubectl -n istio-system get svc
 
 ## To view tracing information for each HTTP request, create some traffic by running the following commands at the command line:
 
-while true; do
-  curl -s http://10.104.52.29:8080/date > /dev/null
-  echo -n .;
-  sleep 0.2
-done
+while true; do <br>
+  curl -s http://10.104.52.29:8080/date > /dev/null <br>
+  echo -n .; <br>
+  sleep 0.2 <br>
+done <br>
 
 # Open up a browser (three tabs) and go to:
 Kiali http://<Exterternal IP>:<Node Port>/kiali (username: admin, password: mysecret)
