@@ -2,7 +2,7 @@ Blue-green deployment is a technique that reduces downtime and risk by running t
 Once you have deployed and fully tested the software in Green, you switch the router so all incoming requests now go to Green instead of Blue. Green is now live, and Blue is idle.
 
 
-kubetcl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab7/bluegreen/destination-rule.yaml
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab7/bluegreen/destination-rule.yaml
 
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab7/bluegreen/virtual-service-v1.yaml
 
