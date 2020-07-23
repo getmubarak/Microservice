@@ -16,7 +16,7 @@ cd istio-1.6.5
 ## Add the istioctl client to your path
 export PATH=$PWD/bin:$PATH
 
-## Install Istio 
+## Install Istio CLI
 istioctl install --set profile=demo
 
 Default — This is recommended for production deployments and configures the default settings of the IstioOperator API. That enforces most rules by default.
