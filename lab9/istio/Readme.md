@@ -62,5 +62,6 @@ kubectl run fortio --image=istio/fortio -- load -t 5m -qps 5 http://10.101.94.93
 
 # Open up a browser (three tabs) and go to:
 Kiali http://Exterternal IP:Node Port/kiali (username: admin, password: admin) <br>
+Prometheus http://localhost:9090/ <br/>
 Grafana http://Exterternal IP:Node Port/dashboard/db/istio-mesh-dashboard <br>
 Jaeger http://Exterternal IP:Node Port <br>
