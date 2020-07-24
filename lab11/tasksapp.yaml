@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tasksapp
+  labels:
+    app: tasksapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tasksapp
+  template:
+    metadata:
+      labels:
+        app: tasksapp
+    spec:
+      containers:
+        - name: tasksapp
+          image: getmub/myapi
+          ports:
+            - containerPort: 5000
+          envFrom:
+            - configMapRef:
+              name: dateapi-configmap
+          imagePullPolicy: Always
