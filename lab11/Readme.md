@@ -12,11 +12,11 @@ Write code to run inside the Pod that uses the Kubernetes API to read a ConfigMa
 kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab11/config.yaml
 
 ##
-kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/mongo-pv.yaml
-kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/mongo-pvc.yaml
-kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/mongo.yaml
-kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/mongo-svc.yaml
-kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/tasksapp-svc.yaml
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/mongo-pv.yaml<br/>
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/mongo-pvc.yaml<br/>
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/mongo.yaml<br/>
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/mongo-svc.yaml<br/>
+kubectl apply -f https://raw.githubusercontent.com/getmubarak/Microservice/master/lab5/tasksapp-svc.yaml<br/>
 
 ##
 kubectl apply -f  https://raw.githubusercontent.com/getmubarak/Microservice/master/lab11/tasksapp.yaml
