@@ -10,7 +10,7 @@ kubectl apply -f  https://raw.githubusercontent.com/getmubarak/Microservice/mast
 
 
 ## use the script gen-jwt.py to generate new tokens 
-wget https://raw.githubusercontent.com/istio/istio/release-1.6/security/tools/jwt/samples/gen-jwt.py
+wget https://raw.githubusercontent.com/istio/istio/release-1.6/security/tools/jwt/samples/gen-jwt.py <br/>
 chmod +x gen-jwt.py
 
 ## You also need the key.pem file:
