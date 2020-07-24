@@ -19,7 +19,15 @@ spec:
           image: getmub/myapi
           ports:
             - containerPort: 5000
-          envFrom:
-            - configMapRef:
-              name: dateapi-configmap
+          env:
+            - name: MONGO_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: dateapi-configmap
+                  key: MONGO_HOST
+            - name: MONGO_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: dateapi-configmap
+                  key: MONGO_PORT
           imagePullPolicy: Always
