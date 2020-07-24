@@ -57,6 +57,9 @@ while true; do <br>
   sleep 0.2 <br>
 done <br>
 
+
+kubectl run fortio --image=istio/fortio -- load -t 5m -qps 5 http://10.101.94.93:8080/date
+
 # Open up a browser (three tabs) and go to:
 Kiali http://Exterternal IP:Node Port/kiali (username: admin, password: admin) <br>
 Grafana http://Exterternal IP:Node Port/dashboard/db/istio-mesh-dashboard <br>
