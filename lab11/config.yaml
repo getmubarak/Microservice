@@ -1,7 +1,8 @@
-kind: ConfigMap 
 apiVersion: v1 
+kind: ConfigMap 
 metadata:
   name: dateapi-configmap 
 data:
-  MONGO_HOST: "mongo"
-  MONGO_PORT: 27017
+  MONGO_HOST: mongo
+  MONGO_PORT: "27017"
+ 
