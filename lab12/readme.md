@@ -19,7 +19,7 @@
 * monitoring
 * alerting
 
-## step 4 : microservice framework
+## step 4 : Build your microservices using a microservice chassis framework, which handles cross-cutting concerns
 
 * service mesh
 * api gateway
