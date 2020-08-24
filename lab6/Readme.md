@@ -47,7 +47,7 @@ We just deployed one container within the pod, but we are seeing two running in 
 kubectl get services
 
 ## make a request to the api.
-curl http://10.106.138.233:8080/
+curl http://<ip address>:8080/date
 
 ## Create a ingress gateway 
 Allocating a random port or external load balancer is easy to set in motion, but comes with unique challenges. Defining many NodePort services creates a tangle of random ports. Defining many Load Balancer services leads to paying for more cloud resources than desired. It’s not possible to avoid completely, but perhaps it could be reduced, contained, so that you would only need to allocate one random port or one load balancer to expose many internal services? The platform needed a new layer of abstraction, one that could consolidate many services behind a single entrypoint.
