@@ -2,9 +2,6 @@
 In microservice scenarios, authentication is handled centrally. If you're using an API Gateway, the gateway is a good place to authenticate. A user starts by sending his credentials to the API gateway which will forward the credentials to the Authorization Server (AS) or the OAuth Server. The AS will generate a JASON Web Token (JWT) and will return it back to the user.
 
  Whenever the user wants to access a certain resource, he’ll request it from the API Gateway and will send the JWT along with his request. The API Gateway will forward the request with the JWT to the microservice that owns this resource. 
- 
- 
-Time 30 mins
 
 ## RequestAuthentication policy that validates incoming tokens
 kubectl apply -f  https://raw.githubusercontent.com/getmubarak/Microservice/master/lab10/RequestAuthentication.yaml
