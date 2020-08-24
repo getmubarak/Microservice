@@ -14,6 +14,8 @@
 
 ## Step 3 :Embrace Devops Culture 
 
+* Package Management
+* Decent branching strategy
 * continous delivery
 * testing
 * monitoring
@@ -25,6 +27,7 @@
 * api gateway
 * traffic management
 * Resilence
+
 
 ## Step 5 :Split the monolith to build a microservices architecture
 
