@@ -1,14 +1,14 @@
 
-# Types of Communication
+# Types of Communication Patterns
 We can split communications into the following types:
 * A request for data (Query)
 * A request to carry out a task (Command)
 * A notification that something happened (Event)
 
-# Inter Service Communication
-* Shared Database / File system.
-* API Centric using synchronous HTTP calls/ grpc calls.
-* Self-Contained Services using asynchronous messaging.
+# Types of Communication protocol
+* Shared storage : Database, File system, S3, ...
+* API Centric using synchronous calls : HTTP, GRPC, ...
+* Self-Contained Services using asynchronous messaging : AMQP, MQTT, ...
 
 ## Shared Database Drawbacks
 * The shared database pattern can cause a few headaches:
