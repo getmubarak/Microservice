@@ -1,4 +1,21 @@
-# Microservice
+# Microservice Lab
+
+* 1. Create Micrservice Api and deploy in Docker
+* 1B. deploy Version 2.0
+* 2. Microservice Service with Database Access
+* 3. Deploy using Docker compose
+* 4. Deploy Microservice to Kubernetis
+* 5. Microservice Service with Database Access in Kubernetes <— stateful sets
+* 6. Deploy Istio Service Mesh
+* 7. Traffic Management
+* 8. Resiliency
+* 9. Logging and Monitoring
+* 10. Microservice Authentication and Authorization
+* 11. Centralize Configuration
+* 12. Service Decomposition
+ 
+ 
+ # Microservice
 patterns<br>
 https://docs.microsoft.com/en-us/azure/architecture/patterns/<br>
 Drone case study<br>
