@@ -15,7 +15,7 @@
 * 12. Service Decomposition
  
  
- # Microservice
+# References
 patterns<br>
 https://docs.microsoft.com/en-us/azure/architecture/patterns/<br>
 Drone case study<br>
