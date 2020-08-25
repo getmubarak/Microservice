@@ -13,6 +13,7 @@
 * 10. Microservice Authentication and Authorization
 * 11. Centralize Configuration
 * 12. Service Decomposition
+* 13. Case studies
  
  
 # References
