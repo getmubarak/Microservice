@@ -26,6 +26,6 @@ The customer has to accept a set of constraints to place a successful order:
 * An order cannot include medicines or hazardous materials.
 * The delivery address must be within 50 miles of a city center.
 
-![alt text](https://raw.githubusercontent.com/getmubarak/Microservice/master/lab12/RainyDay.png "Process Diagram")
+![alt text](RainyDay.png "Process Diagram")
 
 The ones circled in red represent Atomic Business Activities 
