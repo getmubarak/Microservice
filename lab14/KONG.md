@@ -2,8 +2,7 @@
 
 The main platform used to be substantially a monolithic Java codebase hosted on Tomcat and communicating with a single database for pretty much every operation.
 
-First and foremost deployments became harder. Every small change required a full redeployment of the entire system and lots of team coordination, increasing our overhead and risks. 
-When the codebase became increasingly hard to deploy, it made it harder to isolate failures, harder to onboard new contributors, and we knew something was fundamentally wrong. Slowly but surely these problems also affected the team performance and morale leading to an overall feeling of frustration. 
+First and foremost deployments became harder. Every small change required a full redeployment of the entire system and lots of team coordination, increasing our overhead and risks. When the codebase became increasingly hard to deploy, it made it harder to isolate failures, harder to onboard new contributors, and we knew something was fundamentally wrong. Slowly but surely these problems also affected the team performance and morale leading to an overall feeling of frustration. 
 
 
 Transitioning a large legacy codebase is like opening a can of worms
