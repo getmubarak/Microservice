@@ -37,7 +37,7 @@ $ docker logs <container id>  <br/>
 $ curl http://127.0.0.1:8080/date  <br/>
 
 Enter the container  <br/>
-$ docker exec -it <container id> /bin/bash  <br/>
+$ docker exec -it container_id /bin/bash  <br/>
 
 ## step 7: clean ##
 $ docker ps  <br/>
