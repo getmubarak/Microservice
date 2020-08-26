@@ -21,7 +21,7 @@ kubectl get svc
 
 kubectl describe services dateapi
 
-curl http://10.102.109.133:8080
+curl http://10.102.109.133:8080/date
 
 
 ## Create a Service with node port
