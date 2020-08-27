@@ -4,6 +4,8 @@
 
 * A word of caution though as building a monolith can quickly lead to complicated code that will be hard to break down in smaller pieces. Try as much as you can to have clear modules identified so that you can extract them later out of the monolith. You can also start by separating the logic from your web UI and make sure that it interacts with your backend via a RESTful API over HTTP. This will make the transition to microservices easier in the future when you start moving some of the API resources to different services.
 
+https://martinfowler.com/articles/dont-start-monolith.html
+
 ## Step 2: Organise your teams the right way
 
 * Developers often conclude that technology is the answer to everything, but people and processes are prerequisites to using technology effectively, especially software development.
