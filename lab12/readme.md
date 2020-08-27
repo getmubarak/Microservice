@@ -47,7 +47,7 @@ kill off the old corresponding services. This realizes benefits more quickly whi
 
 * words often have different meanings in different contexts. To overcome this hurdle, language should have a strict applicability context. This context is called a Bounded Context. It defines a boundary, inside of which a word can be used freely. Outside of it, the language’s terms may have different meanings.
 
-*A Microservice is a Bounded Context, but not vice versa. Not every Bounded Context is a Microservice. A Bounded Context defines the boundaries of the biggest services possible: services that won’t have any conflicting models inside of them.
+* A Microservice is a Bounded Context, but not vice versa. Not every Bounded Context is a Microservice. A Bounded Context defines the boundaries of the biggest services possible: services that won’t have any conflicting models inside of them.
 
 * In majority of the decomposition scenarios, the teams are better off to rewrite the capability as a new service and retire the old code. This is considering the high cost and low value of reuse, due to reasons such as below:
 1. There is a large amount of boilerplate code that deals with environmental dependencies, such as accessing application configuration at runtime, accessing data stores, caching, and is built with old frameworks. Most of this boilerplate code needs to be rewritten. The new infrastructure to host a microservice is very different from the decades old application runtime and will require a very different kind of boilerplate code.
