@@ -7,7 +7,7 @@ answers who is calling who, which version of a service has failures etc.
 ## Grafana – Metrics Visualization
 The metrics collected by Istio are scraped into Prometheus and visualized using Grafana.
 
-## Distributed Tracing
+## Jaeger - Distributed Tracing
 One way to find a correlation between multiple HTTP requests is through the use of a correlation ID. This ID should be passed to all requests, so that the tracing platform knows which requests belong together.
 
 For Istio to work properly, the following headers should be passed through:
@@ -15,8 +15,6 @@ For Istio to work properly, the following headers should be passed through:
 x-request-id x-b3-traceid x-b3-spanid x-b3-parentspanid x-b3-sampled x-b3-flags x-ot-span-context
 
 Istio supports a number of tracing backends, including Zipkin, Jaeger, Lightstep, and Datadog.
-
-Jaeger Tracer 
 
 Tracing requests throughout services. It is used for monitoring and troubleshooting microservices-based distributed systems, including:
 
