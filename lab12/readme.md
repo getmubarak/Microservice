@@ -14,6 +14,8 @@ https://martinfowler.com/articles/dont-start-monolith.html
 
 * you should create smaller teams that have all the competencies required to develop and maintain the services they're in charge of. 
 
+ Conway's law, which states that an application will reflect the social boundaries of the organization that produced it. But sometimes the opposite is true -the company's organization is formed by the software. You might need to reverse Conway's law and build the boundaries the way you want the company to be organized, leaning toward business process consulting.
+ 
 ## Step 3 :Embrace Devops Culture 
 
 * Package Management
