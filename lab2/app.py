@@ -27,6 +27,7 @@ def add_contact() :
         
 @app.route("/get", methods = ['GET'])
 def get_all_contact() :
+    print("get_all_contact")
     todos = db.Todo.find()
     return dumps(todos)
 
