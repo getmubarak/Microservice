@@ -1,6 +1,6 @@
 # Kong is a open-source API Gateway 
 
-The main platform used to be substantially a monolithic Java codebase hosted on Tomcat and communicating with a single database for pretty much every operation.
+The main platform used to be substantially a monolithic <b> Java codebase hosted on Tomcat and communicating with a single database </b> for pretty much every operation.
 
 First and foremost deployments became harder. Every small change required a full redeployment of the entire system and lots of team coordination, increasing our overhead and risks. When the codebase became increasingly hard to deploy, it made it harder to isolate failures, harder to onboard new contributors, and we knew something was fundamentally wrong. Slowly but surely these problems also affected the team performance and morale leading to an overall feeling of frustration. 
 
