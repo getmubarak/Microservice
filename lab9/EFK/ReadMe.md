@@ -1,3 +1,5 @@
+https://www.katacoda.com/elastic
+
 https://www.katacoda.com/courses/kubernetes/kubernetes-observability-efk-by-javajon
 
 In traditional server environments, application logs are written to a file such as /var/log/app.log. 
