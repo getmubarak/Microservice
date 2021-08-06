@@ -35,3 +35,5 @@ https://dwmkerr.com/the-death-of-microservice-madness-in-2018/<br>
 Testing<br>
 https://www.infoq.com/articles/twelve-testing-techniques-microservices-intro/
 https://www.infoq.com/articles/testing-techniques-microservices-use-cases/
+Books
+https://learning.oreilly.com/library/view/microservices-patterns/9781617294549/
