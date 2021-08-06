@@ -1,0 +1,38 @@
+API Gateway Features
+
+<b> API Transformation </b>
+API virtualization and mediation
+Wide range of protocols, data formats, and standards
+Bi-directional transformation (for example, REST-to-SOAP, XML-to-JSON, and HTTP-to-JMS)
+
+API Control and Governance
+Service Level Agreement (SLA) monitoring and enforcement
+Quota management, traffic throttling, and load balancing
+Content-based routing, blocking, and processing
+Auditing of transactions
+
+API Security
+Protect APIs at all levels (interface, access, and data)
+Authentication and authorization
+Identity mediation and integration with IDM platforms
+Data monitoring, redaction, encryption, and signing
+Key and certificate management
+
+API Monitoring
+Real-time API monitoring, with alerting based on errors, exceptions, and thresholds
+Configurable logging of API transaction data
+Analyze API use for insight and trends
+Automated generation and delivery of reports
+
+API Development Lifecycle
+Manage API lifecycle from creation to end-of-life
+Drag-n-drop policy creation with intuitive flow chart metaphor
+Extensive library of pre-built policy rules
+Interactive API testing tool
+Promotion between environments
+
+API Administration
+Manage all aspects of the daily API operations
+Transaction management
+Tracing and debugging
+OAuth client management
