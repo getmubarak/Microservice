@@ -1,4 +1,4 @@
-Use ELK in the following cases
+# Use ELK in the following cases
 ### You are doing event logging.
 ### You need to process big amounts of log data.
 ### You need long-term data storage.
@@ -6,7 +6,7 @@ Use ELK in the following cases
 ### You need a clustered solution.
                       
 
-Use Prometheus in the following cases
+# Use Prometheus in the following cases
 ### You are primarily doing metrics.
 ### You need simplicity in setting up monitoring and graphing tools.
 ### You need run alerts across various sources.
