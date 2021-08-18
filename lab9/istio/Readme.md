@@ -1,14 +1,16 @@
-## Prometheus
+https://kiali.io/documentation/latest/architecture/
 
+## Prometheus
 Prometheus is an open source monitoring system and time series database. You can use Prometheus with Istio to record metrics that track the health of Istio and of applications within the service mesh. You can visualize metrics using tools like Grafana and Kiali.
 
 ## Kiali - Observability
+The metrics collected by Istio are scraped into Prometheus and visualized using Kiali.
 What microservices are part of my Istio service mesh and how are they connected?
 
 answers who is calling who, which version of a service has failures etc.
 
 ## Grafana – Metrics Visualization
-The metrics collected by Istio are scraped into Prometheus and visualized using Grafana.
+Kiali has basic metric capabilities. It can show the default Istio metrics for workloads, apps and services. It allows to apply some groupings to the provided metrics and fetch metrics for different time ranges. However, Kiali doesn’t allow to customize the views nor customize the Prometheus queries. If you need these capabilities, you’ll want to install Grafana. 
 
 ## Jaeger - Distributed Tracing
 One way to find a correlation between multiple HTTP requests is through the use of a correlation ID. This ID should be passed to all requests, so that the tracing platform knows which requests belong together.
