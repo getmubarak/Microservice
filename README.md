@@ -7,9 +7,9 @@
 * 4. Deploy Microservice to Kubernetis
 * 5. Microservice Service with Database Access in Kubernetes <— stateful sets
 * 6. Deploy Istio Service Mesh
-* 7. Logging and Monitoring
+* 7. Traffic Management
 * 8. Resiliency
-* 9. Traffic Management
+* 9. Logging and Monitoring
 * 10. Microservice Authentication and Authorization
 * 11. Centralize Configuration
 * 12. Service Decomposition
