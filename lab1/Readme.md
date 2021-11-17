@@ -17,6 +17,7 @@ wget https://raw.githubusercontent.com/getmubarak/Microservice/master/lab1/packa
 wget https://raw.githubusercontent.com/getmubarak/Microservice/master/lab1/Dockerfile <br/>
 
 ## Step 4: build ##  
+synatax : docker build docker_id/microservice_name:version <directory of files> 
 docker build -t getmub/dateapi:v1 .  <br/>
 docker images  <br/>
 
