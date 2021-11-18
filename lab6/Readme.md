@@ -10,7 +10,7 @@ Istio, backed by Google, IBM, and Lyft, is currently the best‑known service me
 ## download and extract the latest release
 curl -L https://istio.io/downloadIstio | sh -
 
-curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.6.5 TARGET_ARCH=x86_64 sh -
+curl -k -L https://istio.io/downloadIstio | ISTIO_VERSION=1.6.5 TARGET_ARCH=x86_64 sh -
 
 ## Move to the Istio package directory
 cd istio-1.6.5
