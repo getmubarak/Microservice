@@ -4,7 +4,7 @@ Resiliency
 
 2. Retries
 
-3. Circuit breakers <-- fail fast
+3. Circuit breakers <-- fail fast <br/>
 Enables fast failure rather than clients trying to connect to an overloaded or failing host. Once that limit has been reached the circuit breaker “trips” and stops further connections to that host.
 
 4. Fault injection
