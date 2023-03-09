@@ -1,6 +1,9 @@
 # Deploy Microservice to Kubernetis  #
 Time : 30 minutes
 
+## create a cluster
+https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-interactive/
+
 ## Create a deployment
 A deployment is a supervisor for pods giving you fine-grained control over how and when a new pod version is rolled out as well as rolled back to a previous state. <br/>
 
